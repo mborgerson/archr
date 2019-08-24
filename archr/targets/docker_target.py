@@ -90,7 +90,8 @@ class DockerImageTarget(Target):
             user=user,
             detach=True, auto_remove=self.rm, working_dir=working_dir,
             stdin_open=True, stdout=True, stderr=True,
-            privileged=True, security_opt=["seccomp=unconfined"], volumes=self.volumes #for now, hopefully...
+            privileged=True, security_opt=["seccomp=unconfined"], volumes=self.volumes, #for now, hopefully...
+            network_mode='host'
             #network_mode='bridge', ports={11111:11111, self.target_port:self.target_port}
         )
         return self
