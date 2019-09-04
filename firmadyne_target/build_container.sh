@@ -2,9 +2,34 @@
 set -e
 # set -x
 
-URL=http://www.downloads.netgear.com/files/GDC/WNAP320/WNAP320%20Firmware%20Version%202.0.3.zip
-FILE="WNAP320 Firmware Version 2.0.3.zip"
-NAME="wnap320"
+# URL=http://www.downloads.netgear.com/files/GDC/WNDR3400V3/WNDR3400v3-V1.0.1.18_1.0.63.zip
+# FILE="WNDR3400v3-V1.0.1.18_1.0.63.zip"
+# NAME="wndr3400v3"
+
+# URL=http://www.downloads.netgear.com/files/GDC/WNR2000v3/WNR2000v3_V1.1.2.12.zip
+# FILE="WNR2000v3_V1.1.2.12.zip"
+# NAME="wnr2000v3"
+
+# URL=http://www.downloads.netgear.com/files/GDC/WNR2000V4/WNR2000v4-V1.0.0.64.zip
+# FILE="WNR2000v4-V1.0.0.64.zip"
+# NAME="wnr2000v4"
+
+# URL=http://www.downloads.netgear.com/files/GDC/WNR2000V5/WNR2000v5-V1.0.0.34.zip
+# FILE="WNR2000v5-V1.0.0.34.zip"
+# NAME="wnr2000v5"
+
+#
+# Encrypted...?
+#
+# URL=ftp://ftp2.dlink.com/PRODUCTS/DIR-878/REVA/DIR-878_REVA_FIRMWARE_v1.12B01.zip
+# FILE="DIR-878_REVA_FIRMWARE_v1.12B01.zip"
+# NAME="dir-878"
+
+
+# https://dlinkmea.com/index.php/product/details/?det=NmFNY0ZsYnAvN3BYZlA0a0d2blliQT09
+URL=https://dlinkmea.com/upload/downloadable/7636-DSL-2740U_V1_FW_ME_1.02_webupload.rar
+FILE="DSL-2740U V1 FW ME_1.02_webupload.zip"
+NAME="dsl-2740u"
 
 # Download firmware image:
 if [ ! -e "$FILE" ]; then
